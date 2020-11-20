@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1 {
+    padding-top: 1.5rem;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    margin: 0;
+    background-color: #f8f8f8;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+nav {
+    padding: 17px 20px;
+    margin: 0;
+}
+
+.admin {
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    background-color: #0e9bad;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+    color: #7b7b7b;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #E7E7E7E7;
+    color: #333;
+}
+
+/* MAIN */
+.container {
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* LISTE DES LIVRES */
+ul {
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+    padding: 0;
+}
+
+.menu li {
+    padding-right: 10px;
+}
+
+.menu li a {
+    padding: 5px;
+    color: #337ab7;
+}
+
+.menu li:hover a {
+    background-color: #337ab7;
+    color: #fff;
+}
+
+.contain {
+    overflow-x:auto;
+}
+
+table {
+    font-size: 13px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td, table th {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover td{
+    background-color: #ddd;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+table td a {
+    color: #337ab7;
+}
+
+.img-miniature {
+    width: 25%;
+}
+
+.img-miniatures {
+    width: 90px;
+    height: 120px;
+}
+
+.label-success {
+    padding: 3px 5px;
+    border-radius: 2px;
+    background-color: #5cb85c;
+    color: #FFFFFF;
+}
+
+.label-danger {
+    padding: 3px 5px;
+    border-radius: 2px;
+    background-color: #d95350;
+    color: #FFFFFF;
+}
+
+.success {
+    width: 50%;
+    padding: 3px 5px;
+    border-radius: 2px;
+    background-color: #5cb85c;
+    color: #FFFFFF;
+}
+
+label {
+    margin-right: 0;
+    margin-left: 3px;
+    width: 100%;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    height: 6em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus, option:hover {
+    border-color: #337ab7;
+}
+
+select {
+    width: 100%;
+    padding: .8rem;
+}
+
+button {
+    width: 100%;
+    background-color: #337ab7;
+    color: #eeeeee;
+    border-radius: 0.3em;
+    border:none;
+    padding: 0.4em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #296090;
+}
+
+.row .col-12 {
+    width: calc(100% - 45px);
+}
+
+.i:hover{
+    color: #00B4CC;
+}
+
+/* FOOTER */
+footer {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+    nav {
+        font-size: 14px;
+    }
+}
+
+
